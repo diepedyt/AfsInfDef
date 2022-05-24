@@ -7,6 +7,7 @@ end
 
 task.spawn(function()
     while wait() do
+            game:GetService("ReplicatedStorage").Remote.RedeemCode:InvokeServer("800klikes")
         if _G.CrazyTown == true then
             game:GetService("ReplicatedStorage").Remote.RedeemCode:InvokeServer(code)
             wait(2)
